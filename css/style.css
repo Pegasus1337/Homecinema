@@ -1,0 +1,294 @@
+*{
+    padding:0 ;
+    margin:0 ;
+    box-sizing:border-box ;
+    transition-property : all ; 
+    transition-duration : 0.5s ;
+    transition-timing-function: ease-in-out;
+
+}
+
+body,html{
+    width : 100vw ;
+    height : 100vh ;
+    background-image : linear-gradient(to bottom,black,#300E0E) ;
+    background-repeat : no-repeat ;
+    overflow-x:hidden  ; 
+    position : relative ; 
+}
+body{
+    z-index : 0 ;
+}
+i{
+    margin : 0 2px ;
+}
+
+.top-header {
+    margin-bottom : 0 ;
+}
+
+.top-header img{
+    
+    width : 2.6rem ;
+    margin: 2rem ; 
+    margin-right : 0 ;
+}
+
+.top-header h3{
+    display:inline-block ;
+    letter-spacing  : 4px ;
+    color : white ; 
+    font-family : 'Orator Std Medium' ;
+    font-size : 26px ;
+    font-weight : 600 ;
+    margin: 5px ;
+    margin-top:18px ;
+    
+}
+
+#boxoffice-header {
+    width : 100% ;
+    text-align : center ; 
+    margin-top : -35px ;
+    
+}
+#boxoffice-header p{
+    color  : #E8D06C ;
+    text-align : center  ;
+    opacity : 0.79 ;
+    font-size : 1.2rem ; ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight : bold ; 
+    letter-spacing : 3px ;
+    margin:0 ;
+    display:inline ;
+    pointer-events: none;
+}
+
+
+.ticket-img{
+    width : 45px ;
+    margin-left :  10px; 
+    margin-right : 10px ;
+    display : inline-block ;
+}
+
+#ticket1{
+    transform : rotate(44deg) ;
+    margin-right : 16px ;
+}
+#ticket2{
+    transform : rotate(-44deg) ;
+}
+
+.boxoffice-img-container{
+    width : 80% ;
+    height : 300px ;
+    margin : 20px auto ; 
+    align-items : center ;
+
+}
+
+
+.boxoffice-img{
+    width : 180px ;
+    border : solid 3px #9D8907 ;
+    height : 250px ;
+    border-radius : 18px ;
+    display:inline-block ;
+    margin : 8px 30px ;
+    
+    
+}
+
+.boxoffice-img img{
+    display:inline-block ;
+    height : 100% ; 
+    width : 100% ;
+    overflow : hidden ;
+    outline : none ;
+    border-radius : 18px ;
+
+
+    
+}
+.boxoffice-img img:hover{
+    opacity : 0.3 ;
+    animation-name : fadeIn  ;
+    animation-duration : 1.5s ;
+    animation-iteration-count : 1 ;
+
+}
+
+.boxoffice-img h4 {
+    margin-top:20px ;
+    font-size : 16px ;
+    box-sizing : border-box ;
+    color : #FFAEAE ;
+    font-family :Verdana, Geneva, Tahoma, sans-serif ;
+    font-weight : bold ;
+    width : 185px ;
+}
+.search-header {
+    width  : 100% ;
+}
+
+.search-header p{
+    display:block ;
+    color  : #FB4E4E ;
+    opacity : 0.82 ;
+    font-size : 1.2rem ; ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight : bold ; 
+    letter-spacing : 3px ;
+    margin : 0 auto  ;
+    text-align:center ;
+    padding : 6px 0 ;
+    
+
+}
+
+.search-header input{
+    display:block ;
+    width : 28% ;
+    margin : 20px auto ;
+    height : 30px ; 
+    border-radius : 15px ;
+    background-color : rgba(243, 236, 236, 0.836) ;
+    
+}
+
+.search-header input[placeholder] {
+    text-align:center ;
+    color : #4D4343 ;
+    font-family : Tahoma, sans-serif ;
+    font-weight : bold ;
+    font-size  : 12px ;
+}
+
+.search-button{
+    display:block ;
+    margin : 0 auto ;
+    border : solid 2px white ; 
+    background-color :#9F2E2E ;
+    color : white ; 
+    font-family : Verdana, Geneva, Tahoma, sans-serif ;
+    font-size :  16px ;
+    font-weight : bold ; 
+    letter-spacing : 2px ;
+    border-radius : 23px ;
+    padding : 4px 30px ;
+    padding-left : 28px ;
+}
+
+
+.search-button:hover{
+    opacity : 0.7 ;
+    color :  #9F2E2E ;
+    border : solid 2px #9F2E2E ;
+    color : white ;
+
+
+}
+
+#bulleye {
+color : white ;
+margin-right : 8px ;
+}
+
+
+.social-container {
+    position:relative ;
+}
+
+.social-media{
+    position:absolute ; 
+    bottom : 0 ;
+    left : 2rem ;
+}
+.social-media img{
+   display:inline-block ;
+   width : 30px ;
+   height : 30px ;
+   margin : 0 3px ;
+}
+
+
+
+#popcorn1 , #popcorn2 {
+    opacity : 0.7 ;
+}
+#popcorn1 {
+    position :fixed ; 
+    bottom : 0 ;
+    right : -20px ;
+    width : 17% ;
+    z-index:-2 ;
+}
+
+#popcorn2{
+    position:fixed ;  
+    width : 10% ;
+    bottom : 0 ;
+    z-index: -1 ;
+    right :143px;
+}
+
+#hamburger-button img{
+    width : 35px ;
+}
+
+.navigation{
+    position : absolute ;
+    right : 100px ;
+    top : 30px ;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: 'Orator Std Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Orator Std Medium'), url('OratorStd.woff') format('woff');
+}
