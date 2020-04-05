@@ -80,9 +80,32 @@
         <div class="search-header">
             
             <p ><i  id="bulleye" class="fas fa-bullseye"></i>Want To Search for a Different Movie ? </p>
-            <input class="form-control" type="text" placeholder="Type here movie name ...">
-            <button class="btn search-button"><i class="fas fa-search"></i> Search </button>
-        </div>
+            <input class="form-control" type="text" placeholder="Type here movie name ..." id="search-input">
+            <button id="button"class="btn search-button" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-search"></i> Search </button>
+            <!-- Modal Section -->
+           <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title " id="exampleModalLabel">Search Results :</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="search-list list-group">
+                            
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+             <!-- Modal Section  Ends -->
+        </div> 
 
         <div class="social-media">
             <a href="#?facebook"><img src="images/facebook.png" alt=""></a>
@@ -96,6 +119,11 @@
     <img id="popcorn1" src="images/popcorn.png" alt="">
     <img  id="popcorn2" src="images/popcorn2.png" alt=""> 
 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="js/main.js"> </script>
 
 </body>
 
