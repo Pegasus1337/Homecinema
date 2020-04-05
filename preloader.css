@@ -8,9 +8,20 @@
 }
 body{
     position : relative ;
-    background-color : rgb(26, 26, 26) ;
+
     width : 100% ;
     height : 100vh ;
+}
+
+
+.full-preloader{
+    position : fixed ;
+    background-color : rgb(26, 26, 26) ;
+    width : 100vw ;
+    height : 100vh ;
+    z-index: 1000 ;
+
+
 }
 
 .preloader {
@@ -152,4 +163,13 @@ h3{
     color : rgb(187, 10, 10);
 }
 
+.demolish {
+    opacity : 0 ;
+    pointer-events: none;
+}
+
+
+.main {
+    overflow : hidden ;
+}
 
